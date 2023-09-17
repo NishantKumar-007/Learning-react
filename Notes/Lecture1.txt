@@ -1,7 +1,17 @@
 1.what is CDN? - where react is hosted - we are just downloading it and using it from there.
 2.Ways of including react in our project
     - CDN
-    -
+    - 
 
 3.What is crossorigin? -
-4.
+4.React comes with the philosophy of making changes in dom through JS.
+5.Approach used in hello world program
+    - hello world using html
+    - hello world using Plain JS
+    - hello world using React
+    
+6.The reason React and ReactDOM were split into two libraries was due to the arrival of React 
+Native. React contains functionality utilised in web and mobile apps. ReactDOM functionality is
+ utilised only in web apps.
+
+7.Library vs Framework ?
