@@ -1,7 +1,7 @@
 1.what is CDN? - where react is hosted - we are just downloading it and using it from there.
 2.Ways of including react in our project
     - CDN
-    - 
+    - npm
 
 3.What is crossorigin? -
 4.React comes with the philosophy of making changes in dom through JS.

@@ -1,0 +1,55 @@
+1. NPM - its a package manager but not an abbreviation for "node package manager".
+
+2. "npm init" - way to include npm in any project.
+
+3. this will createpackage.json file
+
+4. package.json is a configuration for npm.
+
+5. When it comes to modern web development, bundlers are an essential part of the toolchain.
+ They help developers manage complex projects by combining various dependencies into a single,
+  optimized file that can be easily deployed.
+
+  There are varoius bundlers like parcel, webpack, rollup, vite etc.
+  For our example we are using Parcel - as it is easy to configure.
+
+6."npm install -D parcel" -  most imp dependency/package is bundler which we need for our project.
+
+7. -D flag stand for -> Two types of dependencies in project - Dev dependencies(required for 
+development) vs normal dependencies(used in prod also).
+
+8. ~(minor version) vs ^(major version) in dependencies.
+
+9. package-lock.json keeps a record of exact version of dependencies being installed in system.
+
+10. meaning of "integrity" in package-lock.json - At the time of the installation, the entire 
+dependency tree is calculated and saved to the lock file, along with metadata about each dependency
+ such as: The version of the package that should be installed. An integrity hash used to provide 
+ assurance that the package hasn't been tampered with.
+
+11.Transitive dependencies - a dependency having dependency on another dependency.
+
+12.Any file which is regeneratable should not be put on github. 
+
+13.npm vs npx ~ installing vs execution
+
+14.npx parcel index.html - this command builds the entire application and hosts it by default 
+on http://localhost:1234
+
+15.npm install react & npm install react-dom - installs react (at the end of the day they are just node modules)
+
+16.Now after installing reacth throug npm packages we can now remove the cdn links from HTML page.
+
+17. import React and ReactDOM from "react" and "react-dom/client" respectively - use this in js file 
+and we can start working with react.
+
+18. <script type="module" src="./App.js"></script> - we need to tell browser that this js file is of  type module
+otherwise it will treat js file as normal js file and not recognise keywords like 'import'.
+For more info - https://parceljs.org/languages/javascript/
+
+19.parcel also avails the feature of HMR - hot module replacement
+change is automatically loaded as soon as we save the file.
+
+20. File watching algorithm ?
+
+21.
