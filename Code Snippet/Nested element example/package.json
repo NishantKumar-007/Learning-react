@@ -2,7 +2,6 @@
   "name": "nested-element-example",
   "version": "1.0.0",
   "description": "this is an example project to show npm usage",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },

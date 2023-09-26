@@ -2,7 +2,7 @@
 
 2. "npm init" - way to include npm in any project.
 
-3. this will createpackage.json file
+3. this will create package.json file
 
 4. package.json is a configuration for npm.
 
@@ -52,4 +52,22 @@ change is automatically loaded as soon as we save the file.
 
 20. File watching algorithm ?
 
-21.
+21. parcel features - caching (faster build)
+                  - Image optimization
+                  - Minification
+                  - Bundling
+                  - Compressing
+                  - Consistent hashing
+                  - Code splitting
+                  - Differential Bundling -> support older browser
+                  - Diagnostics
+                  - Error Handling
+                  - HTTPS
+                  - Tree Shaking - remove unsused Code
+                  - different build for dev and prod
+    for more info - https://parceljs.org/docs/
+
+22.npx parcel build index.html - for prod build . Also remove main:"App.js" from package.json.
+It is there by default as entry point but it conflicts with as parcel, in parcel we give index.html as entry point.
+
+23."browserslist" node package - used to configure what all browsers our app will support.
