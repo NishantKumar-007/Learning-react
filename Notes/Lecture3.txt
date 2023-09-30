@@ -1,0 +1,75 @@
+1. We can create custom scritps to build and run our program instead of writing "npx parcel index.html"
+command again and again.
+
+2.How to create scripts -
+    a. inside scripts tag in package.json add your scripts
+    -> "scripts": {
+    "start": "parcel index.html",  // new command will be "npm run start"
+    "build": "parcel build index.html", // new command will be "npm run build"
+    "test": "jest"
+  }
+
+  // start, build are just variable name , it can be anything.
+
+3.React elements vs dom elements
+
+4.Introduction to JSX (since react.createElement is ugly way to create elements)
+   - const JSXheading = <h1>Hello from JSX</h1>
+
+5. JSX has "HTML" like syntax but it is not html inside JS.
+
+6. JSX is not react, it is just a way to write code in a more readable way.
+
+7. Now, JS engine does not understand JSX syntax on is own. That's where parcel(bundler) helps us by providing a package called 
+"babel'
+  - Babel is a JavaScript compiler
+  - Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
+    -Transform syntax
+    -Polyfill features that are missing in your target environment (through a third-party polyfill such as core-js)
+    -Source code transformations (codemods)
+    -And more! (check out these videos for inspiration)
+
+8. // A JSX expression that spans multiple lines must be wrapped in parentheses: ( and ). 
+        // In the example code, we see the opening parentheses on the same line as the constant declaration, before the 
+        // JSX expression begins.
+
+        // const myList = (
+        //         <ul>
+        //           <li>item 1</li>
+        //           <li>item 2</li>
+        //           <li>item 3</li>
+        //         </ul>
+        //       );
+
+----------------------------------------------------------------------------------------------------------------------------
+
+9.Components - 2 types
+    - class based Components (old)
+    - functional Components (new) - a function which return a JSX code 
+                                    OR a function which return a react element
+
+10.Convention to start with Capital letter
+e.g. 
+-const HeadingComponent = () => {
+  return <h1>Hello from functional Component</h1>;
+};
+
+  OR using shorthand notation (without return keyword)
+
+-const HeadingComponent = () => <h1>Hello from functional Component</h1>;
+
+// incase u have multiple lines use ()
+
+-const HeadingComponent = () => ( 
+  <h1 className="message">Hello from functional Component</h1>
+);
+
+
+11.How to render Component-
+root.render(<HeadingComponent></HeadingComponent>);
+
+12.Component Composition - Component composition is the name for 
+passing components as props to other components, thus creating new 
+components with other components.
+
+13.use { } to write JS inside JSX syntax.
