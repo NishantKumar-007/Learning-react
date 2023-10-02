@@ -1,0 +1,32 @@
+Building food ordering application.
+----------------------------------------------
+step 1: Header
+        - Logo
+        - Nav Item
+
+        Body
+        - Search
+        - Reataurant card container
+            - Restaurant card
+        
+        Footer
+        - Copyright
+        - Links
+        - Contact
+
+Step 2:Creating components for above 3 and adding basic CSS to it.
+    There are 3 ways to add css- inline, through styles.css or passing properties as JS object
+    e.g const CardStyle ={
+        color : "red",
+        width : "100px"
+        // add some more properties
+    }
+        <div> style={CardStyle}
+
+    or
+    <div> style={{color:red}} -> first {} for writing JS , second {} for writing object
+
+Step 3:Now that we have multiple Restaurant cards. We want to add data for different Reataurants dynamically to same card component.
+    This is where props (properties) comes in.
+
+    Props:
