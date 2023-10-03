@@ -29,4 +29,34 @@ Step 2:Creating components for above 3 and adding basic CSS to it.
 Step 3:Now that we have multiple Restaurant cards. We want to add data for different Reataurants dynamically to same card component.
     This is where props (properties) comes in.
 
-    Props:
+    Props: Passing props to components is like passing an argument to a function.
+    e.g const RestaurantCard = (props) =>{
+        console.log(props);
+        // gives two object with resname res1 and res2.
+    }
+        <RestaurantCard resName="res1" />
+        <RestaurantCard resName="res2" />
+
+        or
+
+        //Array Destructuring
+        const RestaurantCard = ({resname, cuisine}) =>{
+        console.log(resname);
+        console.log(cuisine);
+        // gives two object with resname res1 and res2.
+    }
+        <RestaurantCard resName="res1" cuisine="burger"/>
+        <RestaurantCard resName="res2" "cuisine="Pizza"/>
+
+Step 4: Use swiggy api for dummy data and pass it to card
+
+Step 5: Code cleaning
+
+------------------------------------------------------------------------------------------------------------
+Notes:- Explore these topics
+    - Config driven UI - UI is driven by data coming from backend. 
+    - Array joins
+    - optional chaining
+    - Why multiple sibling components need to have unique key -  issues with rerendering and performance issues
+    - React bad practice - using indexes as keys is not recommended.
+        - not using key < index as key < unique id
