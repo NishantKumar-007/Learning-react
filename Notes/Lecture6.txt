@@ -1,0 +1,36 @@
+1.Architecture -
+    a: Monolith -  
+    b: Micoservices - Seperaion of concern
+                    - Single Responsiblity Principle
+                    - Every service is running on a different port
+                    - All these ports can be mapped to domain name (/api, /ui...etc)
+
+2.Getting Data Dynamically-
+    - 2 approaches to calling API - i. Loading page -> Api call -> render with data
+                                - ii. Loading page -> Render -> API call -> Rerender with data
+    
+    - In React we will be using the second approach
+        - better UX
+    - how to achieve -> useEffect hook
+
+3.useEffect - takes 2 argument(callback function ,array of dependencies)
+            - called "after" component is rendered.
+            - if no dependency array is provided useEffect will be called after every render.
+            - if empty dependency array is provided useEffect is called only first time after the component renders.
+            - if dependency array is [XYZ] then it will be rendered first time and every time XYZ component is loaded/rendered.
+            - syntax-> useEffect(()=>{
+                //write your logic
+            },[])
+4.Use fetch to fetch swiggy api and load restaurant data dynamically.
+    Remove mockdata.
+5.use conditional rendering Display shimmer UI(latest practice)/Loading image/loading spinner until the data is fetched from api.
+6.Conditional Rendering - displaying component based on condition.
+7.Why we need useState - to build dynamically changing component - it acts like a refresh mechanism for that component with updated value.
+8.Add search functionality -> capture value from input box and filter a copy of restaurant list, that when we are re-searching we search
+ from the original list and not already filtered one
+-------------------------------------------------------------------------------------------
+points to learn - 
+1.fetch() and axios()
+2.CORS
+3.Revise promises,then, async, await.
+

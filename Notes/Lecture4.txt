@@ -45,8 +45,12 @@ Step 3:Now that we have multiple Restaurant cards. We want to add data for diffe
         console.log(cuisine);
         // gives two object with resname res1 and res2.
     }
+
+    .............................................................
+    // inside parent component -
         <RestaurantCard resName="res1" cuisine="burger"/>
         <RestaurantCard resName="res2" "cuisine="Pizza"/>
+    .............................................................
 
 Step 4: Use swiggy api for dummy data and pass it to card
 
@@ -56,7 +60,7 @@ Step 5: Code cleaning
 Notes:- Explore these topics
     - Config driven UI - UI is driven by data coming from backend. 
     - Array joins
-    - optional chaining
+    - optional chaining - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
     - Why multiple sibling components need to have unique key -  issues with rerendering and performance issues
     - React bad practice - using indexes as keys is not recommended.
         - not using key < index as key < unique id

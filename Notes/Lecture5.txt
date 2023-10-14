@@ -1,0 +1,35 @@
+1.Some good practices or react-
+    a.Keep all the js code in src folder.
+    b.Keep all components in seperate files.(src>component>headerComp,bodyComp,FooterComp)
+    c.Convention - keep file name same as component name 
+    d.Component name - Header.js or Header.jsx -> both ways are correct
+    e.Regarding seperate components-> use of export and import
+        - export default ComponentName (in child component)
+        - import Header from "./Component/Header.js"  OR import Header from "./Component/Header" (in parent component)
+    f.Never keep hardcode data/ dummy data/ hardcode string/URl in component file.
+        - Create another folder (naming convention - util or config or common or whatever) and place all hardcoded data there.
+        - naming convention for URL/constant strings - uppercase and SNAKE_CASE.
+    g.Default export(only one per file) vs named export(multiple exports)
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.Hooks - Why hooks?
+        - React is fast because of efficient dom manipulation.
+        - virtual dom
+        - UI changes along with data change
+        - A hook is basically a JS utility function with some react superpowers.
+        - types of hooks -> a. useState() - to create state variables
+                         -> b. useEffect()
+        - hooks are imported as named imports (using {})
+        - useState() -> a. How to create - const [listOfRestaurants, setListOfRestaurant] = useState([defaultValue]);
+                     -> here 1st parameter - variable that is changing
+                             2nd parameter - function that is called when variable data is changed. we need to pass the updated data as argument in this function.
+        - it is basically a sync between data and UI layer.
+        - every time a state variable changes react will rerender the whole component.
+        - Hooks can only be declared inside body of functional component.
+        - Behind the scenes > how hooks and rerendering works >
+                - Reconciliation Algorithm AKA (React Fiber)
+                - Virtual DOM -> It is a representation of actual DOM.
+                              -> In essence virtual DOM is nothhing but the react element/component which in turn is nothing but a JS object.
+                - Diff Algorithm -> finds difference between old virtual DOM and new virtual DOM and update the changes.
+                - In React 16 a new algorithm came known as React Fiber.
+                - Virtual DOM is more or less JS way of representing HTML. 

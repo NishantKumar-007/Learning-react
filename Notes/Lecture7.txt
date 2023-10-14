@@ -1,0 +1,34 @@
+Hooks cont.
+--------------------------------------------------
+1.Best practises
+    - dont create state variables inside if-else/condition loop.
+    - dont create state variables inside a function.
+
+All about Routing
+------------------------------------------------
+1.npm install react-router-dom
+2.import {createBrowserRouter, RouterProvider} from react-router-dom.
+3.const appRouter = createBrowserRouter([
+    {path:"/", 
+    element:<Home />,
+    errorElement:<ErrorPage /> // to display error page if url doesn't match.
+    },
+    {path:"/contact", element:<Contact />}
+    ......//add as many as u want.
+]);
+4.root.render(<RouterProvider  router={appRouter}/>);
+5.react-router-dom also provides a new hook called useRouteError.
+    - how to use
+        - const err = useRouteError();
+            console.log(err);
+6.Children routes ->
+    a.<Outlet />
+    b.don't use <a></a> tag in react to move to other page.
+    c.Here we use <Link to="/adsdada" />
+7. SPA - Single Page Application
+8.Types of routing in webapps - Client Side Routing (what we are doing in this project.)
+                              - Server Side Routing
+9.Creating page for each individual restaurant
+    -Dynamic Routing ->
+Notes: i.shortcut to create a component -> type rafce -> hit enter
+
