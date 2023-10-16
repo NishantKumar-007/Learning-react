@@ -1,7 +1,7 @@
 Hooks cont.
 --------------------------------------------------
 1.Best practises
-    - dont create state variables inside if-else/condition loop.
+    - dont create state variables inside if-else/condition/for loop.
     - dont create state variables inside a function.
 
 All about Routing
@@ -22,13 +22,19 @@ All about Routing
         - const err = useRouteError();
             console.log(err);
 6.Children routes ->
-    a.<Outlet />
-    b.don't use <a></a> tag in react to move to other page.
-    c.Here we use <Link to="/adsdada" />
+    a.<Outlet /> - displays children component based on path provided.
+    b.don't use <a></a> tag in react to move to other page, it reloads the whole page
+    c.Here we use <Link to="/adsdada" />, it just renders the component instead of reloading the whole page.
 7. SPA - Single Page Application
 8.Types of routing in webapps - Client Side Routing (what we are doing in this project.)
                               - Server Side Routing
 9.Creating page for each individual restaurant
-    -Dynamic Routing ->
+    -Dynamic Routing -> "/home/:id"
+10.useProps hook - 
+11.useRouteError hook - 
+
+
 Notes: i.shortcut to create a component -> type rafce -> hit enter
+       ii. Read about different types of router other than createBrowserRouter.
+       iii. key should be present on the parent JSX that is being mapped.
 
