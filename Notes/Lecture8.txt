@@ -40,7 +40,7 @@ example code
 7. state variables and hooks->
     ->whenever we create an instance of a class constructor is called => here creating an instance is synonymous with whenever the component is loaded.
     ->where to define state variable -
-    ->how to create - this.state{
+    ->how to create - this.state = {
         count:0;
     }
     ->multiple state variable - this.state{
