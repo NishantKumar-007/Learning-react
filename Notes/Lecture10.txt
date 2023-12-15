@@ -1,0 +1,12 @@
+Tailwind
+------------------------------------------------------
+1. Ways of adding css other than normal css - a.Sass/ Scss, b.Styled Componenets c.Using Libraries - chakra ui , bootstrap, material ui, tailwind. 
+2. npm i -D tailwindcss postcss
+3. postcss - helps u modify css using javascript
+4. npx tailwind init
+5. create a new config file for postcss named - .postcssrc (then past default code from documentation page. (basically telling it we are using tailwind and asking it to parse))
+6. add file extensions to content attribute.
+7. add these 3 lines in index.css - @tailwind base;
+                                    @tailwind components;
+                                    @tailwind utilities;
+8.install tailwind css lint extension (optional but useful).

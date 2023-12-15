@@ -1,0 +1,27 @@
+Optimising the Application
+----------------------------------------------------
+1.SRP - single responsibilty principle
+      - modularity 
+      - easy unit testing
+      - maintainability
+
+2.Custom Hooks  
+    - In retaurant menu component we will seperate the menu fetching logic.
+    - seperate file for seperate hook (good convention)
+    - start with "use" -> useMyHook
+    - create a seperate function in utils folder with resId as parameter. And write the fetching logic there.
+    - export default useMyHook;
+
+3.For practice - create one more hook to show online status.
+
+4.Chunking / Code Splitting / dynamic bundling / lazy loading.
+- Why to bundle, when to split in chunks.
+- how to do - through lazy loading or on demand loading
+- instead of ordinarily loading a component we use lazy loading
+    - const Grocery = lazy(() => import ("./component/Grocery));
+    - lazy comes from react package -> import {lazy} from "react";
+    - Suspense component - wrap the compomnent in suspense to avoid error.
+        - we get error as soon as we click on grocery link because react tries to render component but the code has not been loaded due to lazy loading.
+            That's why we use suspense. <Suspense fallback=>{<h1>Loading.... or any component can be passed</h1>}  ></Suspense>
+
+
