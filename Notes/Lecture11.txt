@@ -1,8 +1,13 @@
-1.Higer Order Components - A component which takes a component as argument and builds on top of it.
+1.Higer Order Components (HOC) - A component which takes a component as argument and builds on top of it.
 2.What are we building - restaurant card with promoted label.
 3.How will I know a restaurant is promoted - info given in api.
 4.A higher order function will take restaurantCard component as input and return the component with "promoted label".
+5.Create a function(HOC) after defining restaurantCard component. pass restaurantCard as argument and return another component built on top of restaurantCard.
+6.export this HOC as named export.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-1.
+1.Building an accordian for all the menu types and not just recommended food menu.
+2.use filter on recieved data.
+3.Create a controlled component .// at a time only one accordian should expand.
+4.Concept - lifting the state up.
